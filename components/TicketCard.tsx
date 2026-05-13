@@ -8,7 +8,8 @@ import { buildBookingQrPayload, bookingQrToDataUrl } from '@/lib/booking-qr-payl
 
 interface TicketCardProps {
   booking: any
-  currency: 'FC' | 'USD'
+  /** Code ISO 4217 pour Intl (ex. XOF, USD) ou libellés métier FC/USD */
+  currency: string
   formatCurrency: (amount: number) => string
 }
 

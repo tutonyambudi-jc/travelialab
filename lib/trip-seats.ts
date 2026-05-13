@@ -2,7 +2,7 @@
 const ACTIVE_BOOKING_STATUSES = ['CONFIRMED', 'PENDING'] as const
 
 export function tripSeatsInfo(trip: {
-  bus: { capacity: number }
+  bus?: { capacity?: number | null; name?: string; plateNumber?: string } | null
   _count?: { bookings: number }
 }): { remaining: number; capacity: number; occupied: number } | null {
   if (trip._count === undefined) return null

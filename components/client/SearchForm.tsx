@@ -207,11 +207,7 @@ export function SearchForm() {
           <button
             type="button"
             onClick={() => setTripType('rental')}
-            className={`h-10 rounded-md px-4 text-sm font-semibold transition-colors ${
-              tripType === 'rental'
-                ? 'bg-[#0071c2] text-white'
-                : 'text-slate-600 hover:text-slate-900'
-            }`}
+            className="h-10 rounded-md px-4 text-sm font-semibold transition-colors text-slate-600 hover:text-slate-900"
           >
             Location
           </button>
