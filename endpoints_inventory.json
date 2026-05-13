@@ -1,0 +1,452 @@
+﻿[
+    {
+        "Endpoint":  "/api/admin/buses",
+        "Methods":  "GET, POST",
+        "File":  "app/api/admin/buses/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/buses/[id]",
+        "Methods":  "DELETE, PUT",
+        "File":  "app/api/admin/buses/[id]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/buses/[id]/seats",
+        "Methods":  "POST",
+        "File":  "app/api/admin/buses/[id]/seats/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/buses/[id]/seats/[seatId]",
+        "Methods":  "PATCH, PUT",
+        "File":  "app/api/admin/buses/[id]/seats/[seatId]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/cities",
+        "Methods":  "GET, POST",
+        "File":  "app/api/admin/cities/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/cities/[id]",
+        "Methods":  "DELETE, PUT",
+        "File":  "app/api/admin/cities/[id]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/cities/[id]/stops",
+        "Methods":  "GET, POST",
+        "File":  "app/api/admin/cities/[id]/stops/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/cities/[id]/stops/[stopId]",
+        "Methods":  "DELETE",
+        "File":  "app/api/admin/cities/[id]/stops/[stopId]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/city-stops",
+        "Methods":  "GET, POST",
+        "File":  "app/api/admin/city-stops/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/city-stops/[id]",
+        "Methods":  "DELETE, PUT",
+        "File":  "app/api/admin/city-stops/[id]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/companies",
+        "Methods":  "GET",
+        "File":  "app/api/admin/companies/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/companies/reviews",
+        "Methods":  "GET, PATCH",
+        "File":  "app/api/admin/companies/reviews/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/drivers",
+        "Methods":  "GET, POST",
+        "File":  "app/api/admin/drivers/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/drivers/[id]",
+        "Methods":  "DELETE, PATCH",
+        "File":  "app/api/admin/drivers/[id]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/freight",
+        "Methods":  "GET",
+        "File":  "app/api/admin/freight/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/manifests/passengers",
+        "Methods":  "GET",
+        "File":  "app/api/admin/manifests/passengers/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/manifests/passengers/share",
+        "Methods":  "POST",
+        "File":  "app/api/admin/manifests/passengers/share/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/meals",
+        "Methods":  "GET, POST",
+        "File":  "app/api/admin/meals/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/meals/[id]",
+        "Methods":  "DELETE, GET, PUT",
+        "File":  "app/api/admin/meals/[id]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/miles",
+        "Methods":  "GET",
+        "File":  "app/api/admin/miles/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/notifications",
+        "Methods":  "GET, POST",
+        "File":  "app/api/admin/notifications/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/passenger-pricing/[id]",
+        "Methods":  "PUT",
+        "File":  "app/api/admin/passenger-pricing/[id]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/rentals",
+        "Methods":  "GET",
+        "File":  "app/api/admin/rentals/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/rentals/[id]",
+        "Methods":  "GET, PATCH",
+        "File":  "app/api/admin/rentals/[id]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/routes",
+        "Methods":  "GET, POST",
+        "File":  "app/api/admin/routes/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/routes/[id]",
+        "Methods":  "DELETE, GET, PUT",
+        "File":  "app/api/admin/routes/[id]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/routes/[id]/stops",
+        "Methods":  "GET, POST",
+        "File":  "app/api/admin/routes/[id]/stops/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/routes/[id]/stops/[routeStopId]",
+        "Methods":  "DELETE, PUT",
+        "File":  "app/api/admin/routes/[id]/stops/[routeStopId]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/routes/[id]/stops/[routeStopId]/reorder",
+        "Methods":  "PATCH",
+        "File":  "app/api/admin/routes/[id]/stops/[routeStopId]/reorder/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/settings",
+        "Methods":  "GET, POST",
+        "File":  "app/api/admin/settings/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/settings/brevo",
+        "Methods":  "GET, POST",
+        "File":  "app/api/admin/settings/brevo/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/support/complaints",
+        "Methods":  "GET, PATCH",
+        "File":  "app/api/admin/support/complaints/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/support/settings",
+        "Methods":  "GET, POST",
+        "File":  "app/api/admin/support/settings/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/travel-vouchers",
+        "Methods":  "GET, POST",
+        "File":  "app/api/admin/travel-vouchers/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/trips",
+        "Methods":  "GET, POST",
+        "File":  "app/api/admin/trips/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/trips/[id]",
+        "Methods":  "DELETE, PUT",
+        "File":  "app/api/admin/trips/[id]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/trips/[id]/notify",
+        "Methods":  "POST",
+        "File":  "app/api/admin/trips/[id]/notify/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/trips/[id]/stopovers",
+        "Methods":  "GET, POST",
+        "File":  "app/api/admin/trips/[id]/stopovers/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/trips/[id]/stopovers/[tripStopId]",
+        "Methods":  "DELETE",
+        "File":  "app/api/admin/trips/[id]/stopovers/[tripStopId]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/users",
+        "Methods":  "GET, POST",
+        "File":  "app/api/admin/users/route.ts"
+    },
+    {
+        "Endpoint":  "/api/admin/users/[id]",
+        "Methods":  "DELETE, PATCH",
+        "File":  "app/api/admin/users/[id]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/advertisements",
+        "Methods":  "GET, POST",
+        "File":  "app/api/advertisements/route.ts"
+    },
+    {
+        "Endpoint":  "/api/advertisements/[id]",
+        "Methods":  "DELETE, GET, PUT",
+        "File":  "app/api/advertisements/[id]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/advertisements/[id]/click",
+        "Methods":  "GET, POST",
+        "File":  "app/api/advertisements/[id]/click/route.ts"
+    },
+    {
+        "Endpoint":  "/api/advertisements/inquiries",
+        "Methods":  "GET, POST",
+        "File":  "app/api/advertisements/inquiries/route.ts"
+    },
+    {
+        "Endpoint":  "/api/advertisements/inquiries/[id]",
+        "Methods":  "DELETE, PATCH",
+        "File":  "app/api/advertisements/inquiries/[id]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/advertisements/serve",
+        "Methods":  "GET",
+        "File":  "app/api/advertisements/serve/route.ts"
+    },
+    {
+        "Endpoint":  "/api/agent/reports",
+        "Methods":  "GET",
+        "File":  "app/api/agent/reports/route.ts"
+    },
+    {
+        "Endpoint":  "/api/app-notifications",
+        "Methods":  "GET, PATCH",
+        "File":  "app/api/app-notifications/route.ts"
+    },
+    {
+        "Endpoint":  "/api/auth/[...nextauth]",
+        "Methods":  "GET, POST",
+        "File":  "app/api/auth/[...nextauth]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/auth/register",
+        "Methods":  "POST",
+        "File":  "app/api/auth/register/route.ts"
+    },
+    {
+        "Endpoint":  "/api/booking-groups/[id]/payment",
+        "Methods":  "POST",
+        "File":  "app/api/booking-groups/[id]/payment/route.ts"
+    },
+    {
+        "Endpoint":  "/api/bookings",
+        "Methods":  "POST",
+        "File":  "app/api/bookings/route.ts"
+    },
+    {
+        "Endpoint":  "/api/bookings/[id]",
+        "Methods":  "GET",
+        "File":  "app/api/bookings/[id]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/bookings/[id]/cancel",
+        "Methods":  "POST",
+        "File":  "app/api/bookings/[id]/cancel/route.ts"
+    },
+    {
+        "Endpoint":  "/api/bookings/[id]/extras",
+        "Methods":  "PUT",
+        "File":  "app/api/bookings/[id]/extras/route.ts"
+    },
+    {
+        "Endpoint":  "/api/bookings/[id]/payment",
+        "Methods":  "POST",
+        "File":  "app/api/bookings/[id]/payment/route.ts"
+    },
+    {
+        "Endpoint":  "/api/bookings/auto-cancel",
+        "Methods":  "GET, POST",
+        "File":  "app/api/bookings/auto-cancel/route.ts"
+    },
+    {
+        "Endpoint":  "/api/bookings/cleanup-expired",
+        "Methods":  "GET",
+        "File":  "app/api/bookings/cleanup-expired/route.ts"
+    },
+    {
+        "Endpoint":  "/api/cities",
+        "Methods":  "GET",
+        "File":  "app/api/cities/route.ts"
+    },
+    {
+        "Endpoint":  "/api/companies/ranking",
+        "Methods":  "GET",
+        "File":  "app/api/companies/ranking/route.ts"
+    },
+    {
+        "Endpoint":  "/api/companies/reviews",
+        "Methods":  "POST",
+        "File":  "app/api/companies/reviews/route.ts"
+    },
+    {
+        "Endpoint":  "/api/cron/cancel-expired-bookings",
+        "Methods":  "GET",
+        "File":  "app/api/cron/cancel-expired-bookings/route.ts"
+    },
+    {
+        "Endpoint":  "/api/freight",
+        "Methods":  "GET, POST",
+        "File":  "app/api/freight/route.ts"
+    },
+    {
+        "Endpoint":  "/api/freight/[id]/status",
+        "Methods":  "PATCH",
+        "File":  "app/api/freight/[id]/status/route.ts"
+    },
+    {
+        "Endpoint":  "/api/freight/delivered",
+        "Methods":  "DELETE",
+        "File":  "app/api/freight/delivered/route.ts"
+    },
+    {
+        "Endpoint":  "/api/logistics/drivers",
+        "Methods":  "GET",
+        "File":  "app/api/logistics/drivers/route.ts"
+    },
+    {
+        "Endpoint":  "/api/logistics/issues",
+        "Methods":  "GET, POST",
+        "File":  "app/api/logistics/issues/route.ts"
+    },
+    {
+        "Endpoint":  "/api/logistics/schedule",
+        "Methods":  "GET, POST",
+        "File":  "app/api/logistics/schedule/route.ts"
+    },
+    {
+        "Endpoint":  "/api/logistics/schedule/[id]",
+        "Methods":  "DELETE, PATCH",
+        "File":  "app/api/logistics/schedule/[id]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/logistics/schedule/generate",
+        "Methods":  "POST",
+        "File":  "app/api/logistics/schedule/generate/route.ts"
+    },
+    {
+        "Endpoint":  "/api/manifests/passengers/[token]",
+        "Methods":  "GET",
+        "File":  "app/api/manifests/passengers/[token]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/profile",
+        "Methods":  "PATCH",
+        "File":  "app/api/profile/route.ts"
+    },
+    {
+        "Endpoint":  "/api/profile/password",
+        "Methods":  "POST",
+        "File":  "app/api/profile/password/route.ts"
+    },
+    {
+        "Endpoint":  "/api/rentals",
+        "Methods":  "GET, POST",
+        "File":  "app/api/rentals/route.ts"
+    },
+    {
+        "Endpoint":  "/api/rentals/check-availability",
+        "Methods":  "POST",
+        "File":  "app/api/rentals/check-availability/route.ts"
+    },
+    {
+        "Endpoint":  "/api/settings",
+        "Methods":  "GET",
+        "File":  "app/api/settings/route.ts"
+    },
+    {
+        "Endpoint":  "/api/slider",
+        "Methods":  "DELETE, GET, POST, PUT",
+        "File":  "app/api/slider/route.ts"
+    },
+    {
+        "Endpoint":  "/api/super-agent/check-in/[tripId]/passengers",
+        "Methods":  "GET",
+        "File":  "app/api/super-agent/check-in/[tripId]/passengers/route.ts"
+    },
+    {
+        "Endpoint":  "/api/super-agent/check-in/search",
+        "Methods":  "GET",
+        "File":  "app/api/super-agent/check-in/search/route.ts"
+    },
+    {
+        "Endpoint":  "/api/super-agent/check-in/toggle",
+        "Methods":  "POST",
+        "File":  "app/api/super-agent/check-in/toggle/route.ts"
+    },
+    {
+        "Endpoint":  "/api/super-agent/check-in/trips",
+        "Methods":  "GET",
+        "File":  "app/api/super-agent/check-in/trips/route.ts"
+    },
+    {
+        "Endpoint":  "/api/super-agent/reports",
+        "Methods":  "GET",
+        "File":  "app/api/super-agent/reports/route.ts"
+    },
+    {
+        "Endpoint":  "/api/super-agents",
+        "Methods":  "GET",
+        "File":  "app/api/super-agents/route.ts"
+    },
+    {
+        "Endpoint":  "/api/support/complaints",
+        "Methods":  "GET, POST",
+        "File":  "app/api/support/complaints/route.ts"
+    },
+    {
+        "Endpoint":  "/api/support/config",
+        "Methods":  "GET",
+        "File":  "app/api/support/config/route.ts"
+    },
+    {
+        "Endpoint":  "/api/trips/[id]",
+        "Methods":  "GET",
+        "File":  "app/api/trips/[id]/route.ts"
+    },
+    {
+        "Endpoint":  "/api/trips/availability",
+        "Methods":  "GET",
+        "File":  "app/api/trips/availability/route.ts"
+    },
+    {
+        "Endpoint":  "/api/trips/search",
+        "Methods":  "GET",
+        "File":  "app/api/trips/search/route.ts"
+    },
+    {
+        "Endpoint":  "/api/upload",
+        "Methods":  "POST",
+        "File":  "app/api/upload/route.ts"
+    }
+]
