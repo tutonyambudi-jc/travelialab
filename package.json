@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Plateforme de réservation et vente de billets de bus & gestion de fret",
   "private": true,
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "scripts": {
     "rebuild:sqlite": "npm rebuild better-sqlite3",
     "predev": "node scripts/predev-sqlite.cjs",

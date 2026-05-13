@@ -1,0 +1,9 @@
+# Dokploy / Nixpacks — Node 22 (Prisma 7 : 20.19+ ; Next 16 : 20.9+).
+# Le plan Node par défaut utilise souvent Node 18, ce qui casse `npm ci` (preinstall Prisma).
+
+[variables]
+NIXPACKS_NODE_VERSION = "22"
+NODE_ENV = "production"
+
+[phases.setup]
+nixPkgs = ["nodejs_22", "npm-9_x", "openssl"]
