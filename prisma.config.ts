@@ -1,5 +1,6 @@
-import 'dotenv/config'
 import { defineConfig } from 'prisma/config'
+
+/** Sans `dotenv` : évite l’erreur « Cannot find module dotenv » si `node_modules` est minimal en prod. */
 
 export default defineConfig({
   schema: 'prisma/schema.prisma',
