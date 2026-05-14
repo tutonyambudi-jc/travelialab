@@ -31,6 +31,9 @@ export const viewport = {
   userScalable: true,
 }
 
+/** Évite le prérendu au build (Docker/Nixpacks : pas de DB migrée pendant `next build`). */
+export const dynamic = 'force-dynamic'
+
 export default function RootLayout({
   children,
 }: {
