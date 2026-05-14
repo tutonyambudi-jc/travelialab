@@ -14,7 +14,7 @@
     "predev:lan": "node scripts/predev-sqlite.cjs",
     "dev:lan": "next dev --webpack --hostname 0.0.0.0 --port 8081",
     "build": "next build",
-    "start": "next start",
+    "start": "node ./node_modules/next/dist/bin/next start -H 0.0.0.0",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx --max-warnings=0",
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
