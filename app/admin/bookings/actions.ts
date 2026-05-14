@@ -1,6 +1,5 @@
 'use server'
 
-import type { Prisma } from '@prisma/client'
 import { revalidatePath } from 'next/cache'
 import { prisma } from '@/lib/prisma'
 import { getServerSession } from 'next-auth'
@@ -103,7 +102,7 @@ export async function reportBookingWithVoucher(bookingId: string, reason?: strin
       [booking.user.firstName, booking.user.lastName].filter(Boolean).join(' ').trim() ||
       'Client'
 
-    await prisma.$transaction(async (tx: Prisma.TransactionClient) => {
+    await prisma.$transaction(async (tx) => {
       await tx.travelVoucher.create({
         data: {
           code,

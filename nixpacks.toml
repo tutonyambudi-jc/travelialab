@@ -3,7 +3,8 @@
 
 [variables]
 NIXPACKS_NODE_VERSION = "22"
-NODE_ENV = "production"
+# Ne pas fixer NODE_ENV=production ici : npm ci omettrait les devDependencies
+# (dont le CLI `prisma`), le client ne serait pas généré et TS échouerait sur `Prisma`.
 
 [phases.setup]
 nixPkgs = ["nodejs_22", "npm-9_x", "openssl"]
