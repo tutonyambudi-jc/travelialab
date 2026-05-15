@@ -23,8 +23,12 @@ export default function Error({
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">Une erreur est survenue</h2>
                 <div className="bg-red-50 p-4 rounded-lg mb-6 text-left">
-                    <p className="text-red-800 font-mono text-xs break-all">{error.message}</p>
+                    <p className="text-red-800 font-mono text-xs break-all">{error.message || 'Erreur serveur (détails masqués en production).'}</p>
                     {error.digest && <p className="text-red-600 font-mono text-[10px] mt-2">Digest: {error.digest}</p>}
+                    <p className="mt-3 text-sm text-red-700">
+                      Causes fréquentes : base non initialisée (prisma db push), DATABASE_URL ou NEXTAUTH_SECRET incorrects.
+                      Ouvrez /api/health et consultez les logs Dokploy.
+                    </p>
                 </div>
                 <p className="text-gray-600 mb-6 font-medium">Nous nous excusons pour ce désagrément.</p>
                 <button

@@ -108,8 +108,13 @@ export const authOptions: NextAuthOptions = {
     strategy: "jwt",
   },
   secret:
-    process.env.NEXTAUTH_SECRET ||
+    process.env.NEXTAUTH_SECRET?.trim() ||
     (process.env.NODE_ENV !== "production"
       ? "dev-only-nextauth-secret-change-in-env-local"
-      : undefined),
+      : (() => {
+          console.error(
+            "[auth] NEXTAUTH_SECRET manquant en production — définissez-le dans Dokploy (openssl rand -base64 32)"
+          )
+          return "MISSING_NEXTAUTH_SECRET_IN_PRODUCTION"
+        })()),
 }
