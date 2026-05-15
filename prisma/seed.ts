@@ -1,18 +1,8 @@
 import 'dotenv/config'
 import { PrismaClient } from '@prisma/client'
-import { PrismaBetterSqlite3 } from '@prisma/adapter-better-sqlite3'
 import bcrypt from 'bcryptjs'
 
-function resolveSqliteFilePath() {
-  const raw = process.env.DATABASE_URL || 'file:./prisma/dev.db'
-  if (raw === ':memory:') return ':memory:'
-  if (raw.startsWith('file:')) return raw.slice('file:'.length)
-  return raw
-}
-
-const prisma = new PrismaClient({
-  adapter: new PrismaBetterSqlite3({ url: resolveSqliteFilePath() as string }),
-})
+const prisma = new PrismaClient()
 
 const createDemo = process.env.DEMO_SEED === 'true'
 

@@ -73,10 +73,6 @@ export const authOptions: NextAuthOptions = {
           }
         } catch (e) {
           console.error('[auth] authorize / base de données:', e)
-          const msg = e instanceof Error ? e.message : String(e)
-          if (/NODE_MODULE_VERSION|ERR_DLOPEN|better_sqlite3|better-sqlite3/i.test(msg)) {
-            throw new Error('SQLITE_NATIVE_MISMATCH')
-          }
           throw new Error('AUTH_DATABASE')
         }
       }

@@ -38,16 +38,8 @@ function mapSignInError(error: string | undefined) {
     return 'Accès refusé pour ce compte.'
   }
   if (
-    decoded === 'SQLITE_NATIVE_MISMATCH' ||
-    /NODE_MODULE_VERSION|better_sqlite3|ERR_DLOPEN|was compiled against a different Node/i.test(
-      decoded
-    )
-  ) {
-    return "Le module SQLite natif ne correspond pas à votre version de Node.js. Dans le dossier du projet, exécutez : npm rebuild better-sqlite3 puis redémarrez le serveur (ou réinstallez les dépendances avec npm install)."
-  }
-  if (
     decoded === 'AUTH_DATABASE' ||
-    /prisma|sqlite|sql|database|ECONNREFUSED/i.test(decoded)
+    /prisma|postgres|sql|database|ECONNREFUSED|P1001/i.test(decoded)
   ) {
     return "L'authentification ne peut pas joindre la base de données. Vérifiez que le serveur est démarré et que DATABASE_URL pointe vers une base valide, puis réessayez."
   }
