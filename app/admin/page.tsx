@@ -5,6 +5,7 @@ import { getAdminDashboardAnalytics } from '@/lib/admin-dashboard-analytics'
 import { getAdminGlobalModuleOverview } from '@/lib/admin-global-overview'
 import { AdminGlobalOverview } from '@/components/admin/AdminGlobalOverview'
 import { AdminPageHeader } from '@/components/admin/AdminPageHeader'
+import { DatabaseSetupNotice } from '@/components/admin/DatabaseSetupNotice'
 import { AdminStatusBadge } from '@/components/admin/AdminStatusBadge'
 import Link from 'next/link'
 import { BookingActionButtons } from '@/components/admin/BookingActionButtons'
@@ -60,11 +61,21 @@ export default async function AdminDashboardPage() {
   const session = await getServerSession(authOptions)
   const cookieStore = await cookies()
   const currency: DisplayCurrency = cookieStore.get('ar_currency')?.value === 'USD' ? 'USD' : 'FC'
-  const [stats, analytics, globalOverview] = await Promise.all([
-    getAdminStats(),
-    getAdminDashboardAnalytics(),
-    getAdminGlobalModuleOverview(),
-  ])
+
+  let stats: Awaited<ReturnType<typeof getAdminStats>>
+  let analytics: Awaited<ReturnType<typeof getAdminDashboardAnalytics>>
+  let globalOverview: Awaited<ReturnType<typeof getAdminGlobalModuleOverview>>
+
+  try {
+    ;[stats, analytics, globalOverview] = await Promise.all([
+      getAdminStats(),
+      getAdminDashboardAnalytics(),
+      getAdminGlobalModuleOverview(),
+    ])
+  } catch (error) {
+    console.error('[admin] dashboard data:', error)
+    return <DatabaseSetupNotice error={error} />
+  }
 
   return (
     <>
